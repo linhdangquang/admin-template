@@ -114,7 +114,7 @@
             <li><a href="./category.html"><i class="fas fa-list"></i> Loại hàng</a></li>
             <li><a href="./products.html"><i class="fas fa-shapes"></i> Hàng hóa</a></li>
             <li class="active"><a href="./users.html"><i class="fas fa-users"></i> Khách hàng</a></li>
-			<li><a href="./comments.html"><i class="fas fa-comments"></i> Bình luận</a></li>
+            <li><a href="./comments.html"><i class="fas fa-comments"></i> Bình luận</a></li>
             <li><a href="./orders.html"><i class="fas fa-cart-plus"></i> Đơn hàng</a></li>
             <li><a href="charts.html"><i class="fas fa-chart-line"></i> Thống kê</a></li>
             <li><a href="./slider.html"><i class="fas fa-images"></i> Slider</a></li>
@@ -145,7 +145,7 @@
         <!--/.row-->
 
         <div class="panel panel-default">
-            
+
             <div class="panel-body">
                 <div class="col-8 ">
                     <form action="huhu">
@@ -164,42 +164,42 @@
                             <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
                         </div>
                     </form>
-                    
-                
-                    
-                    
+
+
+
+
                 </div>
-                </div>
-                
             </div>
 
         </div>
 
-        <div class="row">
-            <div class="col-md-12">
-                <div class="panel panel-default">
+    </div>
 
-                </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+
             </div>
         </div>
-        <!--/.row-->
+    </div>
+    <!--/.row-->
 
 
 
-        <div class="row">
-            <div class="col-md-6">
-
-            </div>
-            <!--/.col-->
-
-
-            <div class="col-md-6">
-
-            </div>
-            <!--/.col-->
+    <div class="row">
+        <div class="col-md-6">
 
         </div>
-        <!--/.row-->
+        <!--/.col-->
+
+
+        <div class="col-md-6">
+
+        </div>
+        <!--/.col-->
+
+    </div>
+    <!--/.row-->
     </div>
     <!--/.main-->
 
@@ -214,19 +214,8 @@
     <script src="js/custom.js"></script>
     <script>
         $("#confirm-delete").on("show.bs.modal", function (e) {
-          $(this).find(".btn-ok").attr("href", $(e.relatedTarget).data("href"));
+            $(this).find(".btn-ok").attr("href", $(e.relatedTarget).data("href"));
         });
-      </script>
-    <script>
-        window.onload = function () {
-            var chart1 = document.getElementById("line-chart").getContext("2d");
-            window.myLine = new Chart(chart1).Line(lineChartData, {
-                responsive: true,
-                scaleLineColor: "rgba(0,0,0,.2)",
-                scaleGridLineColor: "rgba(0,0,0,.05)",
-                scaleFontColor: "#c5c7cc"
-            });
-        };
     </script>
     <script>
         $("#checkAl").click(function () {

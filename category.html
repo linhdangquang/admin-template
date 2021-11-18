@@ -114,7 +114,7 @@
             <li class="active"><a href="./category.html"><i class="fas fa-list"></i> Loại hàng</a></li>
             <li><a href="./products.html"><i class="fas fa-shapes"></i> Hàng hóa</a></li>
             <li><a href="./users.html"><i class="fas fa-users"></i> Khách hàng</a></li>
-			<li><a href="./comments.html"><i class="fas fa-comments"></i> Bình luận</a></li>
+            <li><a href="./comments.html"><i class="fas fa-comments"></i> Bình luận</a></li>
             <li><a href="./orders.html"><i class="fas fa-cart-plus"></i> Đơn hàng</a></li>
             <li><a href="charts.html"><i class="fas fa-chart-line"></i> Thống kê</a></li>
             <li><a href="./slider.html"><i class="fas fa-images"></i> Slider</a></li>
@@ -145,15 +145,16 @@
             <div class="col-lg-3 col-sm col-md-3">
                 <div class="list-group shadow-sm">
                     <div class="list-group-item active fw-bold ">
-                         Dữ liệu loại hàng
+                        Dữ liệu loại hàng
                     </div>
-                    <a href="#" class="list-group-item link-primary text-primary fw-semi-bold " data-target="#addModal" data-toggle="modal">Thêm loại hàng</a>
+                    <a href="#" class="list-group-item link-primary text-primary fw-semi-bold " data-target="#addModal"
+                        data-toggle="modal">Thêm loại hàng</a>
                     <a href="#" class="list-group-item link-danger"><span>Số loại hàng : 0 </span> </a>
                 </div>
- 
+
                 <div class="mb-3 fw-bold text-center text-danger">
-                        thông báo lỗi
-               </div>
+                    thông báo lỗi
+                </div>
             </div>
             <div class="col-8 pe-5 ">
                 <div class="table-responsive rounded px-2 table-bordered border-radius-3">
@@ -176,23 +177,24 @@
                                 <td> 0 </td>
                                 <td> Lorem ipsum dolor sit ame</td>
                                 <td width="2%">
-                                    <a href="./update_category.html" class="btn btn-sm w-100 btn-warning text-white">Cập nhật</a>
+                                    <a href="./update_category.html" class="btn btn-sm w-100 btn-warning text-white">Cập
+                                        nhật</a>
                                 </td>
-                                <td width="2%" 
-                               >
+                                <td width="2%">
                                     <a href="#" data-href="delete" data-target="#confirm-delete" data-toggle="modal"
-                                        class="btn btn-sm w-100 btn-danger text-white" >Xóa</a>
+                                        class="btn btn-sm w-100 btn-danger text-white">Xóa</a>
                                 </td>
                             </tr>
 
                         </table>
-                        <p align="left" style="padding-left: 1%;"><button type="submit" onclick="return confirm('Xác nhận xóa?')"
-                            class="btn btn-success" name="multi_delete">Xóa</button></p>
+                        <p align="left" style="padding-left: 1%;"><button type="submit"
+                                onclick="return confirm('Xác nhận xóa?')" class="btn btn-success"
+                                name="multi_delete">Xóa</button></p>
                     </form>
                 </div>
-                
-                 <!-- Modal thêm -->
-                 <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+                <!-- Modal thêm -->
+                <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -204,11 +206,11 @@
                                 <div class="modal-body">
                                     <div class="form-group">
                                         <label>Mã loại hàng</label>
-                                        <input class="form-control" placeholder="Autonumber"  readonly>
+                                        <input class="form-control" placeholder="Autonumber" readonly>
                                     </div>
                                     <div class="form-group">
                                         <label>Tên loại hàng</label>
-                                        <input class="form-control" placeholder="Tên loại..." >
+                                        <input class="form-control" placeholder="Tên loại...">
                                     </div>
                                 </div>
                                 <div class="modal-footer">
@@ -221,13 +223,14 @@
                 </div>
 
                 <!-- DELETE Modal -->
-                <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
                                 Xác nhận xóa?
                             </div>
-                            
+
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Hủy</button>
                                 <a class="btn btn-danger btn-ok">Xóa</a>
@@ -238,15 +241,6 @@
             </div>
 
         </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <div class="panel panel-default">
-
-                </div>
-            </div>
-        </div>
-        <!--/.row-->
 
     </div>
     <!--/.main-->
@@ -261,20 +255,9 @@
     <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/custom.js"></script>
     <script>
-        $('#confirm-delete').on('show.bs.modal', function(e) {
-    $(this).find('.btn-ok').attr('href', $(e.relatedTarget).data('href'));
-});
-    </script>
-    <script>
-        window.onload = function () {
-            var chart1 = document.getElementById("line-chart").getContext("2d");
-            window.myLine = new Chart(chart1).Line(lineChartData, {
-                responsive: true,
-                scaleLineColor: "rgba(0,0,0,.2)",
-                scaleGridLineColor: "rgba(0,0,0,.05)",
-                scaleFontColor: "#c5c7cc"
-            });
-        };
+        $('#confirm-delete').on('show.bs.modal', function (e) {
+            $(this).find('.btn-ok').attr('href', $(e.relatedTarget).data('href'));
+        });
     </script>
     <script>
         $("#checkAl").click(function () {
